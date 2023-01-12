@@ -7,11 +7,13 @@ public class Doctor {
     //Constructor
     Doctor(){
         System.out.println("Constructing Doctor Object");
-        id++;
     }
 
-    Doctor(String name){
+    Doctor(String name, String speciality){
         System.out.println("El nombre del doctor asignado es: "+ name);
+        id++;
+        this.name = name;
+        this.speciality = speciality;
     }
 
     //Behaviour

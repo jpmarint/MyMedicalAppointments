@@ -4,15 +4,9 @@ import static ui.UIMenu.*;
 
 public class Main {
     public static void main(String[] args) {
-        Doctor myDoctor = new Doctor();
-        myDoctor.name = "Alvaro Jose Tafurt Hoyos";
-        myDoctor.showName();
-        myDoctor.showId();
+        //showMenu();
 
-        Doctor myDoctorAnn = new Doctor();
-        myDoctor.showId();
-
-        showMenu();
-
+        Doctor myDoctor = new Doctor("Juan Pablo Marin", "Neurologo");
+        System.out.println(myDoctor.name + ": "+ myDoctor.speciality);
     }
 }
