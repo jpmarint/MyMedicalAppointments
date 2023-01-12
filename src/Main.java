@@ -1,8 +1,4 @@
-import com.sun.javadoc.Doc;
-
 import java.util.Date;
-
-import static ui.UIMenu.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,7 +13,6 @@ public class Main {
              myDoctor.getAvailableAppointments()) {
             System.out.println(availableAppointment.getDate() + " " + availableAppointment.getTime());
         }
-        System.out.println(myDoctor.name + ": "+ myDoctor.speciality);
 
         Patient patient = new Patient("Alejandra", "alejandra@mail.com");
         patient.setWeight(54.6);

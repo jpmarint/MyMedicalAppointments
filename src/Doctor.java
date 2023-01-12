@@ -2,32 +2,22 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
-    //Attributes
-    static int id = 0; //Autoincrement
-    String name;
-    String speciality;
-    String email;
+public class Doctor extends User{
+    //Attribute
+    private String speciality;
 
     //Constructor
-    Doctor(){
-        System.out.println("Constructing Doctor Object");
-    }
-
-    Doctor(String name, String speciality){
-        System.out.println("El nombre del doctor asignado es: "+ name);
-        id++;
-        this.name = name;
-        this.speciality = speciality;
+    Doctor(String name, String email){
+        super(name, email);
     }
 
     //Behaviour
-    public void  showName(){
-        System.out.println(name);
+    public String getSpeciality() {
+        return speciality;
     }
 
-    public void showId(){
-        System.out.println("ID Doctor: " + id);
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
     }
 
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
