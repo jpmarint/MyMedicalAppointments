@@ -7,7 +7,7 @@ public class Doctor extends User{
     private String speciality;
 
     //Constructor
-    Doctor(String name, String email){
+    public Doctor(String name, String email){
         super(name, email);
     }
 
@@ -32,6 +32,12 @@ public class Doctor extends User{
     @Override
     public String toString() {
         return super.toString() + "\n Speciality: " + speciality + "\n Available: " + availableAppointments.toString();
+    }
+
+    @Override
+    public void showDataUser() {
+        System.out.println("Empleado del Hospital: Cruz Roja");
+        System.out.println("Departamento: Cancerología");
     }
 
     public static class AvailableAppointment{

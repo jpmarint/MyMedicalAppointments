@@ -1,4 +1,4 @@
-public class User {
+public abstract class User {
     private int id;
     private String name;
     private String email;
@@ -58,5 +58,6 @@ public class User {
         return "USer: " + name + ", Email: " + email + "\nAddress: " + address + ", Phone: " + phoneNumber;
     }
 
+    public abstract void showDataUser();
 
 }
