@@ -14,7 +14,7 @@ public class UIDoctorMenu {
             System.out.println("Welcome " + UIMenu.doctorLogged.getName());
             System.out.println("1. Add available appointment");
             System.out.println("2. My Schedule Appointment");
-            System.out.println("3. Logout");
+            System.out.println("0. Logout");
 
             Scanner sc = new Scanner(System.in);
             response = Integer.valueOf(sc.nextLine());

@@ -66,13 +66,14 @@ public class UIMenu {
                      }
                  }
             }
-            if (userType == 1){
+            if (userType == 2){
                 for (Patient p: patients){
                     if (p.getEmail().equals(email)){
                         emailCorrect = true;
                         //Obtain logged user
                         patientLogged = p;
                         //show patient menu
+                        UIMenu.showPatientMenu();
                     }
                 }
             }
